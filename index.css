@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+*{
+    font-family: 'Red Hat Mono', monospace;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    background: url(content/blue.jpg) repeat;
+}
+#wrap{
+    overflow: hidden;
+    min-width: 1190px;
+    font-size: 18px;
+}
+#skip_btn{
+    position: relative;
+    z-index: 1000;
+}
+    #skip_btn a{
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 100px;
+        border: 1px solid lightblue;
+        background: dimgray;
+        color: ghostwhite;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #skip_btn a:active,
+    #skip_btn a:focus{
+        top:0;
+    }
+header{
+    position: relative;
+    text-align: center;
+    height: 95px;
+    border-bottom: 1px solid lightslategrey;
+}
+nav{
+    width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+    font-weight: 700;
+}
+nav a{
+    text-decoration: none;
+    color: darkslateblue;
+}
+#title{
+    font-size: 50px;
+}
+main{
+    position: relative;
+    width: 1130px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+main section{
+    width: 565px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section_img{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border: 1px solid darkslateblue;
+    transition: 1s;
+}
+.section_img:active, .section_img:focus{
+    background-size: 120%;
+}
+.cat_img{
+    background: url(content/cat3.jpg);
+    background-size: cover;
+}
+.dog_img{
+    background: url(content/dog3.jpg);
+    background-size: cover;
+}
+footer{
+    background-color: rgba(62, 72, 82, 0.8);
+    border-top: 1px solid lightslategray;
+}
+.footer_inner{
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.footer_inner img{
+    margin: 20px;
+}
