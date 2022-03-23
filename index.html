@@ -1,40 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CATDOG</title>
+        <title>Mammalia(PC)</title>
+            <!-- JQUERY 적용 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="index.css">
+        <script>
+            //  PC웹페이지에 적용할부분
+            var ua = window.navigator.userAgent.toLowerCase();
+            var mobileWindowWidth
+            if(/iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua) || /ipad/.test(ua) || /windows ce/.test(ua)) {
+                document.location.replace("/mobile/index.html");
+            }
+        </script>
+        <script src="index.js"></script>
     </head>
     <body>
         <div id="wrap">
             <!-- skip 메뉴 -->
-                    <div id="skip_btn"><a href="index.html">Home</a></div>
-            <header>
-                <nav>
-                    <a href="cat.html">Cat</a>
-                    <div id="title"><a href="index.html">CATDOG</a></div>
-                    <a href="dog.html">Dog</a>
-                </nav>
-            </header>
+                <div id="skip_btn"><a href="index.html">Home</a></div>
+            <header></header>
+
             <main>
                 <section id="cat">
                     <button type="button" class="section_img cat_img"></button>
-                    <p><h2>cat</h2>
-                        The cat (Felis catus) is a domestic species of a small carnivorous mammal.
-                    </p>
+                    <div class="text">
+                        <h2>cat</h2>
+                        <p>고양이(학명: <i>Felis catus</i>, 영어: Cat)는
+                            고양이과에 속하는 야행성·육식성 포유동물.<br>
+                            [출처: 한국민족문화대백과사전(고양이)]</p>
+                            <img src="content/cat_ils2.png" alt="cat" width="250px">     
+                    </div>
                 </section>
+
                 <section id="dog">
+                    <div class="text">
+                        <h2>Dog</h2>
+                        <p>개(학명: <i>Canis lupus familiaris</i>, 영어: Dog)는 개과에 속하는 포유동물.<br>
+                            [출처: 한국민족문화대백과사전(개)]</p>
+                        <img src="content/dog_ils2.png" alt="cat" width="450px">
+                    </div>  
                     <button type="button" class="section_img dog_img"></button>
-                    <p><h2>dog</h2>
-                        bsdsfdfdfdaget</p> 
                 </section>
+
+                <section id="rabbit">
+                    <button type="button" class="section_img rabbit_img"></button>
+                    <div class="text">
+                        <h2>Rabbit</h2>
+                        <p>토끼(학명: <i>Leporidae</i>, 영어: Rabbit)는 토끼과에 속하는 동물의 총칭.<br>
+                            [출처: 한국민족문화대백과사전(토끼)]</p>
+                            <img src="content/rabbit_ils2.png" alt="cat" width="330px">
+                    </div>
+                </section>
+
+                <section id="deer">
+                    <div class="text">
+                        <h2>Deer</h2>
+                        <p>사슴(학명: <i>Cervidae</i>, 영어: Deer)는 사슴과에 속하는 동물의 총칭.<br>
+                            [출처: 한국민족문화대백과사전(사슴)]</p>
+                        <img src="content/deer_ils2.png" alt="cat" width="330px">
+                    </div>    
+                    <button type="button" class="section_img deer_img">
+                        <span></span>
+                    </button>
+                </section>
+                
             </main>
+            <div class="witch">
+                <img src="content/witch2.png" alt="witch" width="200px">
+            </div>
             <footer>
                 <div class="footer_inner">
-                    <img alt="footer" src="content/catdog.png" width="50px">
-                    About us
+                    <div class="inner_div">
+                        <img alt="mmalia" src="content/catdog.png" width="100px">
+                        <strong>About us</strong>
+                        <p>
+                            Catdog is a combination of cat and dog.
+                            And also, CatDog is an American animated television series created by Peter Hannan for Nickelodeon.
+                            The series follows the life of yellow conjoined brothers of different species, with one half of the resultant animal being a cat and the other a dog.
+                            Nickelodeon produced the series from Burbank, California.
+                            The first episode aired on April 4, 1998, following the 1998 Kids' Choice Awards, before the show officially premiered in October of that year.
+                            Similarly, the Season 2 episode "Fetch" was shown in theaters in 1998 before airing on television.
+                        </p>
+                    </div>
+                    <div class="inner_div contact">
+                        <strong>Contact</strong>
+                        <p>
+                            tel 2022-03-23 | email @mammalia.com | instagram | facebook | twitter | @mammalia
+                        </p>    
+                    </div>
                 </div>
             </footer>
         </div>
+        <script>
+            $(function (){
+                $("header").load("includes/header.html");
+            })
+        </script>
     </body>
 </html>

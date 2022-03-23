@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap');
 *{
-    font-family: 'Red Hat Mono', monospace;
+    font-family: 'Hahmlet', serif;
 }
 html,body{
     margin: 0;
@@ -9,16 +9,17 @@ html,body{
     text-align: center;
 }
 body{
-    background: url(content/blue.jpg) repeat;
+    background-color: ghostwhite;
 }
 #wrap{
     overflow: hidden;
     min-width: 1190px;
     font-size: 18px;
 }
+/* skip메뉴 */
 #skip_btn{
     position: relative;
-    z-index: 1000;
+    z-index: 10000;
 }
     #skip_btn a{
         position: absolute;
@@ -36,71 +37,231 @@ body{
     #skip_btn a:focus{
         top:0;
     }
+/* header */
 header{
+    display: flex;
     position: relative;
     text-align: center;
-    height: 95px;
-    border-bottom: 1px solid lightslategrey;
-}
-nav{
-    width: 1130px;
-    height: 100%;
+    padding: 30px 30px 10px 30px;
     margin: 0 auto;
-    padding: 0 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 25px;
-    font-weight: 700;
+    background-color: gainsboro;
+    border-bottom: 1px solid darkslateblue;
 }
-nav a{
-    text-decoration: none;
-    color: darkslateblue;
+    header a{
+        text-decoration: none;
+        color: black;
 }
 #title{
-    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    width: 400px;
+    height: 100%;
+    font-weight: 600;
 }
+    #title img{
+        display: inline-block;
+    }
+/* menu */
+.menu{
+    width: 730px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+.menu li{
+    width: 185px;
+}
+    .menu_title{
+        font-size: 18px;
+        font-weight: 600;
+    }
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+    .sub_menu{
+        font-size: 16px;
+        height: 0px;
+        padding-top: 5px;
+    }
+        .sub_menu li{
+            display: none;
+        }
+
+
+/* main */
 main{
     position: relative;
     width: 1130px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 50px auto;
 }
-main section{
-    width: 565px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    main section{
+        width: 1130px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+        .text{
+            padding: 9px;
+            width: 610px;
+            height: 480px;
+            border: 1px solid darkslateblue;
+        }
+            .text p{
+                padding: 0 50px;
+                height: 100px;
+            }
 .section_img{
     display: inline-block;
     width: 500px;
     height: 500px;
     border: 1px solid darkslateblue;
     transition: 1s;
-}
-.section_img:active, .section_img:focus{
-    background-size: 120%;
+    /* box-shadow: 5px 5px 10px darkgray; */
 }
 .cat_img{
-    background: url(content/cat3.jpg);
-    background-size: cover;
+    background: url(content/cat3.jpg) center;
+    background-size: 100%;
+    transition: 1s;
 }
+    .cat_img:active, .cat_img:focus, .cat_img:hover{
+        background-size: 105%;
+        opacity: 1;
+        filter: saturate(500%);
+    }
+
+
 .dog_img{
-    background: url(content/dog3.jpg);
-    background-size: cover;
+    background: url(content/dog3.jpg) center;
+    background-size: 100%;
+    transition: 1s;
 }
+    .dog_img:active, .dog_img:focus, .dog_img:hover{
+        background-size: 110%;
+        animation: color 10s infinite;
+    }
+    @keyframes color{
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+.rabbit_img{
+    background: url(content/rabbit_main.jpg) center;
+    background-size: 150%;
+}
+    .rabbit_img:active, .rabbit_img:focus, .rabbit_img:hover{
+        filter: brightness(150%);
+        background-size: 160%;
+    }
+.deer_img{
+    background: url(content/deer_main.jpg);
+    background-position: 90%;
+    background-size: 180%;
+    position: relative;
+    opacity: 0.9;
+    transition: 1s;
+}
+    .deer_img:active, .deer_img:focus, .deer_img:hover{
+        opacity: 1;
+        background-size: 190%;
+        filter: saturate(200%);
+    }
+    .deer_img span{
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        background-color: rgb(3, 220, 255);
+        border-radius: 50%;
+        border: none;
+        box-shadow: 0px 0px 100px 100px rgb(3, 220, 255);
+        position: absolute;
+        right: 44%;
+        bottom: 70%;
+    }
+
+
+
+/* witch animation */
+.witch{
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 155px;
+}
+.witch img{
+    transform: rotate(-22deg);
+    animation-name: witch, move;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 3s, 15s;
+    position: absolute;
+    right: -5%;
+}
+@keyframes witch{
+    50%{
+        transform: translateY(1px);
+    }
+}
+@keyframes move{
+    50%{
+        right: 50%;
+    }
+    100%{right: 105%;}
+}
+
+/* footer */
 footer{
-    background-color: rgba(62, 72, 82, 0.8);
-    border-top: 1px solid lightslategray;
+    background-color: gainsboro;
+    border-top: 1px solid darkslateblue;
 }
-.footer_inner{
-    width: 1130px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+    .footer_inner{
+        width: 1130px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .inner_div{
+        display: flex;
+        align-items: center;
+    }
+    .footer_inner img{
+        margin: 20px 20px 20px 0;
+    }
+    .footer_inner p{
+        text-align: left;
+        margin: 30px;
+        line-height: 28px;
+    }
+    .contact{
+        padding-left: 119px;
+    }
+
+/* dog */
+.dog_run{
+    margin: 5px auto;
+    overflow: hidden;
+    position: relative;
+    height: 80px;
 }
-.footer_inner img{
-    margin: 20px;
+#dog_body{
+    animation-name: run;
+    position: absolute;
+    right: 5%;
+    z-index: 100;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes run{
+    100%{
+        right: 100%;
+    }
+    
 }

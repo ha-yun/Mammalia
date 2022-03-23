@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>About Dog(PC)</title>
+        <!-- JQUERY 적용 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <script>
+            //  PC웹페이지에 적용할부분
+            var ua = window.navigator.userAgent.toLowerCase();
+            var mobileWindowWidth
+            if(/iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua) || /ipad/.test(ua) || /windows ce/.test(ua)) {
+                document.location.replace("/mobile/cat.html");
+            }
+        </script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- skip 메뉴 -->
+                    <div id="skip_btn"><a href="index.html">Home</a></div>
+                    <header></header>
+            <main>    
+                <section>
+                    <img src="./content/dog3.jpg" alt="dog_eyes" width="500px">
+                </section>
+            </main>
+            <footer></footer>
+        </div>
+        <script>
+            $(function(){
+                $("header").load("includes/header.html");
+                $("footer").load("includes/footer.html");
+            })
+        </script>
+    </body>
+</html>
