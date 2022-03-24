@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&display=swap');
 *{
     font-family: 'Hahmlet', serif;
 }
@@ -127,7 +127,7 @@ main{
     /* box-shadow: 5px 5px 10px darkgray; */
 }
 .cat_img{
-    background: url(content/cat3.jpg) center;
+    background: url(content/cat_main.jpg) center;
     background-size: 100%;
     transition: 1s;
 }
@@ -139,7 +139,7 @@ main{
 
 
 .dog_img{
-    background: url(content/dog3.jpg) center;
+    background: url(content/dog_main.jpg) center;
     background-size: 100%;
     transition: 1s;
 }
@@ -188,20 +188,20 @@ main{
 
 
 
-/* witch animation */
-.witch{
+/* last_animation */
+.last_animation{
     margin: 100px auto 0 auto;
     overflow: hidden;
     position: relative;
     height: 155px;
 }
-.witch img{
+#witch{
     transform: rotate(-22deg);
+    position: absolute;
+    right: -5%;
     animation-name: witch, move;
     animation-iteration-count: infinite, infinite;
     animation-duration: 3s, 15s;
-    position: absolute;
-    right: -5%;
 }
 @keyframes witch{
     50%{
@@ -215,6 +215,19 @@ main{
     100%{right: 105%;}
 }
 
+#rabbit_car{
+    position: absolute;
+    right: -23%;
+    animation-name: car, move;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 1s, 15s;
+}
+@keyframes car{
+    50%{
+        transform: translateY(5px);
+    }
+}
+
 /* footer */
 footer{
     background-color: gainsboro;
@@ -224,24 +237,131 @@ footer{
         width: 1130px;
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: space-evenly;
     }
     .inner_div{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
-    .footer_inner img{
-        margin: 20px 20px 20px 0;
-    }
-    .footer_inner p{
-        text-align: left;
-        margin: 30px;
+        .logo img{
+            margin: 15px;
+            display: block;
+        }
+    .about{
+        margin: 20px;
         line-height: 28px;
     }
-    .contact{
-        padding-left: 119px;
+
+/* sub page */
+.sub_text{
+    width: 700px;
+    padding: 20px;
+}
+.sub_content{
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+    .sub_content p{
+        margin-block-start: 0;
     }
+/* gallery */
+#gallery{
+    height: 960px;
+    width: 1130px;
+    text-align: center;
+    margin: 30px auto;
+    border-top: 1px solid darkslateblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+}
+    #gallery_main{
+        max-height: 500px;
+        filter: saturate(150%);
+    }
+.gallery_section{
+    height: 300px;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid darkslateblue;
+    border-radius: 10px;
+    background-color: rgb(36, 36, 36);
+    filter: saturate(80%);
+}
+    .gallery_section ul{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        height: 250px;
+        width: fit-content;
+        margin-block: 0;
+        padding-inline: 0;
+    }
+    .gallery_section li{
+        transform: translateX(0px);
+        list-style-type: none;
+        transition: 0.5s;
+        border: 1px solid rgba(24, 24, 24, 0.8);
+    }
+        .gallery_section li:hover{
+            border: 1px solid gainsboro;
+            filter: brightness(140%);
+        }
+    .gallery_section ul img{
+        max-height: 250px;
+    }
+    .gallery_section button{
+        width: 50px;
+        margin: auto 20px;
+        background: transparent;
+        border: none;
+        font-size: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+        color: rgb(105, 105, 105)
+    }
+        .gallery_section button:hover{
+            color: ghostwhite;
+        }
+
+/* cat */
+.cat_eyes{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: url(./content/cat_eyes.jpg) center;
+    background-size: 150%;
+    border-radius: 50%;
+}
+    .cat_eyes span{
+        position: absolute;
+        right: 65%;
+        top: 48%;
+        width: 1px;
+        height: 1px;
+        background-color: black;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 30px black;
+        opacity: 0;
+        animation: blink 3s infinite;
+    }
+    #right{
+        right: 39%;
+        top: 45%;
+    }
+    @keyframes blink{
+        10%{
+            opacity:1;
+        }
+        30%{
+            opacity:0;
+        }
+    }
+
 
 /* dog */
 .dog_run{

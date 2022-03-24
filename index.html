@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="utf-8">
         <title>Mammalia(PC)</title>
@@ -14,7 +14,7 @@
                 document.location.replace("/mobile/index.html");
             }
         </script>
-        <script src="index.js"></script>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <div id="wrap">
@@ -26,7 +26,7 @@
                 <section id="cat">
                     <button type="button" class="section_img cat_img"></button>
                     <div class="text">
-                        <h2>cat</h2>
+                        <h2>고양이</h2>
                         <p>고양이(학명: <i>Felis catus</i>, 영어: Cat)는
                             고양이과에 속하는 야행성·육식성 포유동물.<br>
                             [출처: 한국민족문화대백과사전(고양이)]</p>
@@ -36,7 +36,7 @@
 
                 <section id="dog">
                     <div class="text">
-                        <h2>Dog</h2>
+                        <h2>개</h2>
                         <p>개(학명: <i>Canis lupus familiaris</i>, 영어: Dog)는 개과에 속하는 포유동물.<br>
                             [출처: 한국민족문화대백과사전(개)]</p>
                         <img src="content/dog_ils2.png" alt="cat" width="450px">
@@ -47,7 +47,7 @@
                 <section id="rabbit">
                     <button type="button" class="section_img rabbit_img"></button>
                     <div class="text">
-                        <h2>Rabbit</h2>
+                        <h2>토끼</h2>
                         <p>토끼(학명: <i>Leporidae</i>, 영어: Rabbit)는 토끼과에 속하는 동물의 총칭.<br>
                             [출처: 한국민족문화대백과사전(토끼)]</p>
                             <img src="content/rabbit_ils2.png" alt="cat" width="330px">
@@ -56,7 +56,7 @@
 
                 <section id="deer">
                     <div class="text">
-                        <h2>Deer</h2>
+                        <h2>사슴</h2>
                         <p>사슴(학명: <i>Cervidae</i>, 영어: Deer)는 사슴과에 속하는 동물의 총칭.<br>
                             [출처: 한국민족문화대백과사전(사슴)]</p>
                         <img src="content/deer_ils2.png" alt="cat" width="330px">
@@ -67,29 +67,33 @@
                 </section>
                 
             </main>
-            <div class="witch">
-                <img src="content/witch2.png" alt="witch" width="200px">
+            <div class="last_animation">
+                <img id="witch" src="content/witch2.png" alt="witch" width="200px">
             </div>
             <footer>
                 <div class="footer_inner">
+                    <div class="logo">
+                        <img alt="mammalia" src="content/catdog.png" width="150px">
+                        <strong>MAMMALIA</strong>
+                    </div>
                     <div class="inner_div">
-                        <img alt="mmalia" src="content/catdog.png" width="100px">
-                        <strong>About us</strong>
-                        <p>
-                            Catdog is a combination of cat and dog.
-                            And also, CatDog is an American animated television series created by Peter Hannan for Nickelodeon.
-                            The series follows the life of yellow conjoined brothers of different species, with one half of the resultant animal being a cat and the other a dog.
-                            Nickelodeon produced the series from Burbank, California.
-                            The first episode aired on April 4, 1998, following the 1998 Kids' Choice Awards, before the show officially premiered in October of that year.
-                            Similarly, the Season 2 episode "Fetch" was shown in theaters in 1998 before airing on television.
-                        </p>
+                        <div class="about"><strong>About us</strong>
+                            <p>
+                                동물에 관한 인류의 관심은 오랜 역사를 가지며 동물의 모습을 관찰하며 그들의 발생, 생태에 관하여 조금씩 알게 되었다.
+                                인간이 최초로 동물을 이용한 것은 식료 이용을 위한 것으로 추측된다.
+                                인류는 의식주·의약·농경·어업 등 생산 활동과 관련하여, 살고 있는 곳의 동물이나 식물과 밀접한 관계를 맺으면서 살아왔다.<br>
+                                인류의 문화가 발달함에 따라 사람들의 동물이나 식물에 관한 지식이 점차 축적되면서 정밀하게 되었을 것이다.
+                                우리 민족의 경우도 곳곳에서 발견된 선사시대의 유적·유물 중에 생물의 유물이나 생물에 관계되는 유물이 많이 출토되고 있다.
+                                <br>[출처: 한국민족문화대백과사전]
+                            </p>
+                        </div>    
+                        <div class="about"><strong>Contact</strong>
+                            <p>
+                                tel 2022-03-23 | email @mammalia.com | instagram | facebook | twitter | @mammalia
+                            </p>    
+                        </div>
                     </div>
-                    <div class="inner_div contact">
-                        <strong>Contact</strong>
-                        <p>
-                            tel 2022-03-23 | email @mammalia.com | instagram | facebook | twitter | @mammalia
-                        </p>    
-                    </div>
+
                 </div>
             </footer>
         </div>
