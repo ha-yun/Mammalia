@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <meta charset="utf-8">
-        <title>About Dog(PC)</title>
+        <title>About Rabbit(PC)</title>
         <!-- JQUERY 적용 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="index.css">
@@ -14,7 +14,7 @@
                 document.location.replace("/mobile/cat.html");
             }
         </script>
-        <script src="index.js"></script>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <div id="wrap">
@@ -23,9 +23,51 @@
                     <header></header>
             <main>    
                 <section>
-                    <img src="./content/rabbit1.jpg" alt="rabbit" width="500px">
+                    <div class="rabbit_clover">
+                    </div>
+                    <div class="sub_text">
+                        <h2>토끼</h2>
+                        <p>토끼는 포유동물에 속하며 야생형과 야생형을 길들여 키운 집토끼 등이 있다.
+                            우리나라의 야생형은 멧토끼가 보편적인 종이며, 멧토끼를 길들인 집토끼와 애완용으로 개량한 품종들이 있다.
+                        </p>
+                    </div>
                 </section>
-            </main>
+                <section class="sub_content">
+                    <h3>Characteristic</h3>
+                    <p>포유동물의 토끼목은 비교적 작은 크기를 가진다. 
+                        매우 짧거나 흔적적인 꼬리를 가지며 앞·뒷발은 다섯 발가락을 가진다. <br>
+                        위턱의 앞니는 큰 것 1쌍이 앞에 있고 그 바로 뒤에 매우 작은 것 1쌍이 있다. 
+                        앞니는 완전히 에나멜질로 싸여 있고 앞니와 앞어금니 사이에 넓은 틈이 있다. </p>
+                </section>
+                <section class="sub_content">
+                    <h3>Tale</h3>
+                    <p>
+                        오래전부터 전해오는 구전 등 우리나라의 민속문화에서 토끼는 꾀 많고 귀여운 동물로 인식되어져 왔다.<br>
+                        우리 주변에서 늘 흔히 볼 수 있는 동물이지만 달 속에서 방아를 찧는 상상의 대상인 토끼는 
+                        친숙한 동물이면서 신성스런 존재로 다가오게 만들었다.<br>
+                        [출처: 한국민족문화대백과사전(토끼)]
+                    </p>
+                </section>
+
+            <div id="gallery">
+                <h3>Gallery</h3>
+                    <img id="gallery_main" src="./content/rabbit_4.jpg" alt="rabbit">
+                <section class="gallery_section">
+                    <button id="btn_galleryL" type="button"><</button>
+                        <ul>
+                            <li><img src="./content/rabbit_4.jpg" alt="rabbit"></li>
+                            <li><img src="./content/rabbit1.jpg" alt="rabbit"></li>
+                            <li><img src="./content/rabbit2.jpg" alt="rabbit"></li>
+                            <li><img src="./content/rabbit_3.jpg" alt="rabbit"></li>
+                            <li><img src="./content/rabbit.jpg" alt="rabbit"></li>
+                            <li><img src="./content/rabbit_5.jpg" alt="rabbit"></li>
+                            <li><img src="./content/rabbit_7.jpg" alt="rabbit"></li>
+                        </ul>
+                    <button id="btn_galleryR" type="button">></button>
+                </section>
+            </div>
+        </main>
+
             <div class="last_animation">
                 <img id="rabbit_car" src="content/rabbit_car.png" alt="rabbit_car" width="300px">
             </div>

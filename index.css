@@ -51,6 +51,9 @@ header{
         text-decoration: none;
         color: black;
 }
+    header a:hover{
+        color: darkslateblue;
+    }
 #title{
     display: flex;
     align-items: center;
@@ -86,6 +89,7 @@ nav ul{
     .sub_menu{
         font-size: 16px;
         height: 0px;
+        width: 185px;
         padding-top: 5px;
     }
         .sub_menu li{
@@ -154,11 +158,11 @@ main{
     }
 .rabbit_img{
     background: url(content/rabbit_main.jpg) center;
-    background-size: 150%;
+    background-size: 160%;
 }
     .rabbit_img:active, .rabbit_img:focus, .rabbit_img:hover{
-        filter: brightness(150%);
-        background-size: 160%;
+        filter: grayscale(150%);
+        background-size: 170%;
     }
 .deer_img{
     background: url(content/deer_main.jpg);
@@ -265,6 +269,8 @@ footer{
 }
     .sub_content p{
         margin-block-start: 0;
+        padding-right: 80px;
+        line-height: 32px;
     }
 /* gallery */
 #gallery{
@@ -364,24 +370,78 @@ footer{
 
 
 /* dog */
-.dog_run{
-    margin: 5px auto;
-    overflow: hidden;
+.dog_light{
     position: relative;
-    height: 80px;
+    width: 400px;
+    height: 400px;
+    background: url(./content/dog8.jpg) no-repeat;
+    background-position: 50% 0%;
+    background-size: 180%;
+    border-radius: 50%;
+    filter: saturate(120%)
 }
-#dog_body{
-    animation-name: run;
-    position: absolute;
-    right: 5%;
-    z-index: 100;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
+    .dog_light span{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        right: -1%;
+        top: 0%;
+        background: url(./content/dog7.jpg) no-repeat;
+        background-position: 30% 10%;
+        background-size: 210%;
+        border-radius: 50%;
+        opacity: 1;
+        filter: brightness(110%);
+        animation: flower 10s infinite;
+    }
+    @keyframes flower{
+        50%{
+            opacity: 0;
+        }
+    }
+
+/* rabbit */
+.rabbit_clover{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: url(./content/rabbit_6.jpg) center no-repeat;
+    background-size: 180%;
+    border-radius: 50%;
+    filter: saturate(120%)
 }
 
-@keyframes run{
+/* deer */
+.deer_night{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: url(./content/deer4.jpg) center no-repeat;
+    background-size: 180%;
+    border-radius: 50%;
+    filter: saturate(120%);
+    overflow: hidden;
+}
+.deer_night span{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 28%;
+    right: -100%;
+    background: url(./content/deer_ils5.png) no-repeat;
+    background-size: contain;
+    animation-name: walk, walking;
+    animation-duration: 20s, 1.5s;
+    animation-iteration-count: infinite, infinite;
+
+}
+@keyframes walk{
     100%{
-        right: 100%;
+        right: 70%;
     }
-    
+}
+@keyframes walking{
+    50%{
+        transform: translateY(10px);
+    }
 }

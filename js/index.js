@@ -13,7 +13,7 @@ $(function (){
     function MoveGalleryR(){
         Right = Number(galleryList.css('transform').split(',')[4]);
         if(Right > -galleryWidth){
-            Right -= 100;
+            Right -= 150;
             galleryList.stop().css({'transform':'translateX(' + Right + 'px)'});
         }else{
             galleryList.stop().css({'transform':'translateX(' + -galleryWidth + 'px)'});
@@ -22,7 +22,7 @@ $(function (){
     function MoveGalleryL(){
         Left = Number(galleryList.css('transform').split(',')[4]);
         if(Left < 0){
-            Left += 100;
+            Left += 150;
             galleryList.stop().css({'transform':'translateX(' + Left + 'px)'});
         }else{
             galleryList.stop().css({'transform':'translateX(0px)'});
