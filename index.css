@@ -159,9 +159,10 @@ main{
 .rabbit_img{
     background: url(content/rabbit_main.jpg) center;
     background-size: 160%;
+    filter: grayscale(10%);
 }
     .rabbit_img:active, .rabbit_img:focus, .rabbit_img:hover{
-        filter: grayscale(150%);
+        filter: brightness(130%);
         background-size: 170%;
     }
 .deer_img{
@@ -262,6 +263,9 @@ footer{
     width: 700px;
     padding: 20px;
 }
+    .sub_text p{
+        padding: 0 20px;
+    }
 .sub_content{
     flex-direction: column;
     align-items: flex-start;
@@ -272,6 +276,7 @@ footer{
         padding-right: 80px;
         line-height: 32px;
     }
+    
 /* gallery */
 #gallery{
     height: 960px;
@@ -405,10 +410,16 @@ footer{
     position: relative;
     width: 400px;
     height: 400px;
-    background: url(./content/rabbit_6.jpg) center no-repeat;
-    background-size: 180%;
+    background: url(./content/rabbit_8.jpg) center no-repeat;
+    background-size: 160%;
     border-radius: 50%;
-    filter: saturate(120%)
+    filter: saturate(150%);
+    animation: 10s clover infinite;
+}
+@keyframes clover{
+    50%{
+        background-size: 350%;
+    }
 }
 
 /* deer */
