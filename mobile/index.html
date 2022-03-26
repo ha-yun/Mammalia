@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mammalia(Mobile)</title>
+        <!-- JQUERY 적용 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="mobile.css">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <section id="cat">
+                <div class="main_img">
+                <button type="button" class="section_img cat_img"></button>
+                <img src="../content/cat_ils2.png" alt="cat" width="30%"> 
+                </div>
+                    <h2>고양이</h2>
+                    <p>고양이(학명: <i>Felis catus</i>, 영어: Cat)는
+                        고양이과에 속하는 야행성·육식성 포유동물.<br>
+                        [출처: 한국민족문화대백과사전(고양이)]</p>
+            </section>
+
+            <section id="dog">
+                <div class="main_img">
+                <img src="../content/dog_ils2.png" alt="cat" width="35%">
+                <button type="button" class="section_img dog_img"></button>
+                </div> 
+                    <h2>개</h2>
+                    <p>개(학명: <i>Canis lupus familiaris</i>, 영어: Dog)는 개과에 속하는 포유동물.<br>
+                        [출처: 한국민족문화대백과사전(개)]</p>
+            </section>
+
+            <section id="rabbit">
+                <div class="main_img">
+                <button type="button" class="section_img rabbit_img"></button>
+                <img src="../content/rabbit_ils2.png" alt="cat" width="35%">
+                </div>    
+                    <h2>토끼</h2>
+                    <p>토끼(학명: <i>Leporidae</i>, 영어: Rabbit)는 토끼과에 속하는 동물의 총칭.<br>
+                        [출처: 한국민족문화대백과사전(토끼)]</p>
+            </section>
+
+            <section id="deer">
+                <div class="main_img">
+                <img src="../content/deer_ils2.png" alt="cat" width="35%">
+                <button type="button" class="section_img deer_img"></button>
+                </div>
+                    <h2>사슴</h2>
+                    <p>사슴(학명: <i>Cervidae</i>, 영어: Deer)는 사슴과에 속하는 동물의 총칭.<br>
+                        [출처: 한국민족문화대백과사전(사슴)]</p>
+            </section>
+        </main>
+
+        <div class="last_animation">
+            <p id="rabbit_car">
+                <span></span>
+                <span id="left"></span>
+                <span id="left2"></span>
+                <span id="left3"></span>
+            </p>
+        </div>
+
+        <footer>
+            <img alt="mammalia" src="../content/catdog.png">
+            <div class="logo"><strong>MAMMALIA</strong></div>
+            <div><strong>About us</strong>
+                <p>
+                    동물에 관한 인류의 관심은 오랜 역사를 가지며 동물의 모습을 관찰하며 그들의 발생, 생태에 관하여 조금씩 알게 되었다.
+                    인간이 최초로 동물을 이용한 것은 식료 이용을 위한 것으로 추측된다.
+                    인류는 의식주·의약·농경·어업 등 생산 활동과 관련하여, 살고 있는 곳의 동물이나 식물과 밀접한 관계를 맺으면서 살아왔다.<br>
+                    인류의 문화가 발달함에 따라 사람들의 동물이나 식물에 관한 지식이 점차 축적되면서 정밀하게 되었을 것이다.
+                    우리 민족의 경우도 곳곳에서 발견된 선사시대의 유적·유물 중에 생물의 유물이나 생물에 관계되는 유물이 많이 출토되고 있다.
+                    <br>[출처: 한국민족문화대백과사전]
+                </p>
+            </div>    
+            <div><strong>Contact</strong>
+                <p>
+                    tel 2022-03-23 | email @mammalia.com | instagram | facebook | twitter | @mammalia
+                    <a href="../index.html">PC버전</a>
+                </p>    
+            </div>
+        </footer>
+
+        <script>
+            $(function (){
+                $("header").load("includes/mobile_header.html");
+            })
+        </script>
+    </body>
+</html>

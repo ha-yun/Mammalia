@@ -128,16 +128,13 @@ main{
     height: 500px;
     border: 1px solid darkslateblue;
     transition: 1s;
-    /* box-shadow: 5px 5px 10px darkgray; */
 }
 .cat_img{
     background: url(content/cat_main.jpg) center;
     background-size: 100%;
-    transition: 1s;
 }
     .cat_img:active, .cat_img:focus, .cat_img:hover{
         background-size: 105%;
-        opacity: 1;
         filter: saturate(500%);
     }
 
@@ -145,7 +142,6 @@ main{
 .dog_img{
     background: url(content/dog_main.jpg) center;
     background-size: 100%;
-    transition: 1s;
 }
     .dog_img:active, .dog_img:focus, .dog_img:hover{
         background-size: 110%;
@@ -171,7 +167,6 @@ main{
     background-size: 180%;
     position: relative;
     opacity: 0.9;
-    transition: 1s;
 }
     .deer_img:active, .deer_img:focus, .deer_img:hover{
         opacity: 1;
@@ -218,19 +213,6 @@ main{
         right: 50%;
     }
     100%{right: 105%;}
-}
-
-#rabbit_car{
-    position: absolute;
-    right: -23%;
-    animation-name: car, move;
-    animation-iteration-count: infinite, infinite;
-    animation-duration: 1s, 15s;
-}
-@keyframes car{
-    50%{
-        transform: translateY(5px);
-    }
 }
 
 /* footer */

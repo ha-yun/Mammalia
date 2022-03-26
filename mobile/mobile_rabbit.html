@@ -2,25 +2,15 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
-        <title>About Rabbit(PC)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Rabbit(MOBILE)</title>
         <!-- JQUERY 적용 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <link rel="stylesheet" href="index.css">
-        <script>
-            //  PC웹페이지에 적용할부분
-            var ua = window.navigator.userAgent.toLowerCase();
-            var mobileWindowWidth
-            if(/iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua) || /ipad/.test(ua) || /windows ce/.test(ua)) {
-                document.location.replace("/mobile/cat.html");
-            }
-        </script>
-        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="mobile.css">
+        <script src="js/mobile.js"></script>
     </head>
     <body>
-        <div id="wrap">
-            <!-- skip 메뉴 -->
-                    <div id="skip_btn"><a href="index.html">Home</a></div>
-                    <header></header>
+        <header></header>
         <main>    
             <section>
                 <div class="rabbit_clover">
@@ -52,29 +42,29 @@
 
             <div id="gallery">
                 <h3>Gallery</h3>
-                    <img id="gallery_main" src="./content/rabbit_4.jpg" alt="rabbit">
-                <section class="gallery_section">
+                <div class="gallery_img">
+                    <img id="gallery_main" src="../content/rabbit_4.jpg" alt="rabbit">
+                </div>
+                    <section class="gallery_section">
                     <button id="btn_galleryL" type="button"><</button>
                         <ul>
-                            <li><img src="./content/rabbit_4.jpg" alt="rabbit"></li>
-                            <li><img src="./content/rabbit1.jpg" alt="rabbit"></li>
-                            <li><img src="./content/rabbit2.jpg" alt="rabbit"></li>
-                            <li><img src="./content/rabbit_3.jpg" alt="rabbit"></li>
-                            <li><img src="./content/rabbit.jpg" alt="rabbit"></li>
-                            <li><img src="./content/rabbit_5.jpg" alt="rabbit"></li>
-                            <li><img src="./content/rabbit_7.jpg" alt="rabbit"></li>
+                            <li><img src="../content/rabbit_4.jpg" alt="rabbit"></li>
+                            <li><img src="../content/rabbit1.jpg" alt="rabbit"></li>
+                            <li><img src="../content/rabbit2.jpg" alt="rabbit"></li>
+                            <li><img src="../content/rabbit_3.jpg" alt="rabbit"></li>
+                            <li><img src="../content/rabbit.jpg" alt="rabbit"></li>
+                            <li><img src="../content/rabbit_5.jpg" alt="rabbit"></li>
+                            <li><img src="../content/rabbit_7.jpg" alt="rabbit"></li>
                         </ul>
                     <button id="btn_galleryR" type="button">></button>
                 </section>
             </div>
         </main>
-
-            <footer></footer>
-        </div>
+        <footer></footer>
         <script>
             $(function(){
-                $("header").load("includes/header.html");
-                $("footer").load("includes/footer.html");
+                $("header").load("includes/mobile_header.html");
+                $("footer").load("includes/mobile_footer.html");
             })
         </script>
     </body>

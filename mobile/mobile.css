@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&display=swap');
+*{
+    font-family: 'Hahmlet', serif;
+}
+html,body, button, h1, h2, h3, h4, h5, h6, input, ul, ol, li, p{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width: 94%;
+    padding: 3%;
+    margin: 0 auto;
+    background-color: gainsboro;
+    border-bottom: 1px solid darkslateblue;
+}
+    header a{
+        text-decoration: none;
+        color: black;}
+    header a:hover{
+        color: darkslateblue;
+    }
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+    #title a{
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+#mobile_menu{
+    border: 1px solid darkslateblue;
+    background-color: ghostwhite;
+    font-weight: 800;
+    color: black;
+    padding: 1.5%;
+    border-radius: 50%;
+}
+nav{
+    width: 100%;
+    padding-top: 5%;
+    display: none;
+}
+    nav ul{
+        list-style: none;
+    }
+.menu{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+    .menu a{
+        border-bottom: 1px solid darkslateblue;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+        .sub_menu{
+            margin-top: 10%;
+            margin-bottom: 20%;
+        }
+
+
+/* main */
+main{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+}
+    main section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        margin: 7% auto;
+    }
+    main section p{
+        padding: 3%;
+    }
+.main_img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.section_img{
+    width: 40%;
+    height: 40vw;
+    border: 1px solid darkslateblue;
+    transition: 1s;
+}
+.cat_img{
+    background: url(../content/cat_main.jpg) center;
+    background-size: 120%;
+}
+    .cat_img:active, .cat_img:focus, .cat_img:hover{
+        background-size: 150%;
+        filter: saturate(500%);
+    }
+.dog_img{
+    background: url(../content/dog_main.jpg) center;
+    background-size: 100%;
+}
+    .dog_img:active, .dog_img:focus, .dog_img:hover{
+        background-size: 110%;
+        animation: color 10s infinite;
+    }
+    @keyframes color{
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+.rabbit_img{
+    background: url(../content/rabbit_main.jpg) center;
+    background-size: 175%;
+    filter: grayscale(10%);
+}
+    .rabbit_img:active, .rabbit_img:focus, .rabbit_img:hover{
+        filter: brightness(130%);
+        background-size: 200%;
+    }
+.deer_img{
+    background: url(../content/deer_main.jpg);
+    background-position: 90%;
+    background-size: 180%;
+    opacity: 0.9;
+}
+    .deer_img:active, .deer_img:focus, .deer_img:hover{
+        opacity: 1;
+        background-size: 200%;
+        filter: saturate(200%);
+    }
+
+/* last_animation */
+.last_animation{
+    margin: 15% auto 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 15vh;
+}
+
+#rabbit_car{
+    position: absolute;
+    right: -50%;
+    background: url(../content/rabbit_car2.png) no-repeat;
+    background-size: contain;
+    height: 23vh;
+    width: 30vh;
+    animation-name: car, move;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 1s, 15s;
+}
+#rabbit_car span{
+    position: absolute;
+    right: 5.5%;
+    top: 46%;
+    background: url(../content/wheel.png) no-repeat;
+    background-size: cover;
+    height: 3vh;
+    width: 3vh;
+    filter: saturate(200%);
+    animation: wheel 1s linear infinite;
+}
+#left{
+    right: 21.5% !important;}
+#left2{
+    right: 56.5% !important;}
+#left3{
+    right: 79.5% !important;}
+@keyframes car{
+    50%{
+        transform: translateY(3px);
+    }}
+@keyframes move{
+    50%{
+        right: 50%;
+    }
+    100%{right: 105%;}}
+
+@keyframes wheel{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gainsboro;
+    border-top: 1px solid darkslateblue;
+}
+footer div{
+    width: 95vw;
+    margin: 3%;}
+footer img{
+    margin-top:3%;
+    width: 10vw;
+}
+.logo{
+    text-align: center;
+    font-size: 1.3rem}
+footer p{
+    padding: 2%;
+}
+
+/* sub mobile page */
+.sub_text{
+    width: 90%;
+    padding: 5%;
+    text-align: center;
+}
+    .sub_text h2{
+        font-size: 1.3rem;
+    }
+.sub_content{
+    width: 96%;
+    padding: 2%;
+}
+#gallery{
+    width: 100%;
+    text-align: center;
+}
+    #gallery h3{
+        font-size: 1.1rem;
+    }
+    .gallery_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:93vw;
+        width: 93vw;
+        margin: 0 auto;
+    }
+    #gallery_main{
+        max-width: 93vw;
+        max-height: 93vw;
+        filter: saturate(150%);
+    }
+    .gallery_section{
+        flex-direction: row;
+        width: 100%;
+        height: 30vw;
+        border: 1px solid darkslateblue;
+        border-radius: 10px;
+        background-color: rgb(36, 36, 36);
+        filter: saturate(80%);
+        margin: 2% auto;
+    }
+    .gallery_section ul{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        width: fit-content;
+        height: 100%;
+    }
+    .gallery_section li{
+        transform: translateX(0px);
+        transition: 0.5s;
+        list-style-type: none;
+    }
+    .gallery_section ul img{
+        border: 1px solid rgba(24, 24, 24, 0.8);
+        max-height: 30vw;
+        transition: 0.5s;
+    }
+        .gallery_section ul img:hover{
+            border: 1px solid ghostwhite;
+            filter: brightness(120%);
+        }
+
+    .gallery_section button{
+        height: 100%;
+        width: 10%;
+        background: transparent;
+        border: none;
+        font-size: 1.3rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+        color: rgb(105, 105, 105)
+    }
+        .gallery_section button:hover{
+            color: ghostwhite;
+        }
+
+/* cat */
+.cat_eyes{
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    background: url(../content/cat_eyes.jpg) center;
+    background-size: 150%;
+    border-radius: 50%;
+}
+    .cat_eyes span{
+        position: absolute;
+        right: 65%;
+        top: 48%;
+        width: 1px;
+        height: 1px;
+        background-color: black;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 50px black;
+        opacity: 0;
+        animation: blink 3s infinite;
+    }
+    #right{
+        right: 39%;
+        top: 45%;
+    }
+    @keyframes blink{
+        10%{
+            opacity:1;
+        }
+        30%{
+            opacity:0;
+        }
+    }
+
+/* dog */
+.dog_light{
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    background: url(../content/dog8.jpg) no-repeat;
+    background-position: 50% 0%;
+    background-size: 180%;
+    border-radius: 50%;
+    filter: saturate(120%)
+}
+    .dog_light span{
+        position: absolute;
+        width: 50vw;
+        height: 50vw;
+        right: -1%;
+        top: 0%;
+        background: url(../content/dog7.jpg) no-repeat;
+        background-position: 30% 10%;
+        background-size: 210%;
+        border-radius: 50%;
+        opacity: 1;
+        filter: brightness(110%);
+        animation: flower 10s infinite;
+    }
+    @keyframes flower{
+        50%{
+            opacity: 0;
+        }
+    }
+/* rabbit */
+.rabbit_clover{
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    background: url(../content/rabbit_8.jpg) center no-repeat;
+    background-size: 160%;
+    border-radius: 50%;
+    filter: saturate(150%);
+    animation: 10s clover infinite;
+}
+@keyframes clover{
+    50%{
+        background-size: 350%;
+    }
+}
+
+/* deer */
+.deer_night{
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    background: url(../content/deer4.jpg) center no-repeat;
+    background-size: 180%;
+    border-radius: 50%;
+    filter: saturate(120%);
+    overflow: hidden;
+}
+.deer_night span{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    top: 28%;
+    right: -100%;
+    background: url(../content/deer_ils5.png) no-repeat;
+    background-size: contain;
+    animation-name: walk, walking;
+    animation-duration: 20s, 1.5s;
+    animation-iteration-count: infinite, infinite;
+
+}
+@keyframes walk{
+    100%{
+        right: 70%;
+    }
+}
+@keyframes walking{
+    50%{
+        transform: translateY(10px);
+    }
+}
+
+
+
+/* 테블릿 (해상도 768px ~ 1023px) */
+@media all and (min-width: 768px) and (max-width:1023px){
+    html, body, button, h1, h2, h3, h4, h5, h6, input, ul, ol, li, p {
+        font-size: 1.2rem;}
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+    html, body, button, h1, h2, h3, h4, h5, h6, input, ul, ol, li, p {
+        font-size: 1.1rem;}
+}
