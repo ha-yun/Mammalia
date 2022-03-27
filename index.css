@@ -243,7 +243,7 @@ footer{
     text-align: left;
 }
     .sub_content p{
-        margin-block-start: 0;
+        margin: 0;
         padding-right: 50px;
         line-height: 32px;
     }
@@ -279,9 +279,8 @@ footer{
         overflow: hidden;
         height: 250px;
         width: fit-content;
-        margin-inline-start: 0;
-        margin-inline-end: 0;
-        padding-inline-start: 0;
+        margin: 0;
+        padding: 0;
     }
     .gallery_section li{
         transform: translateX(0px);
