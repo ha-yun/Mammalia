@@ -279,8 +279,9 @@ footer{
         overflow: hidden;
         height: 250px;
         width: fit-content;
-        margin-block: 0;
-        padding-inline: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-inline-start: 0;
     }
     .gallery_section li{
         transform: translateX(0px);
