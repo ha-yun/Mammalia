@@ -1,1 +1,1 @@
-# CATDOG
+# Mammalia
