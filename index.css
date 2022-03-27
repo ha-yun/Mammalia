@@ -42,6 +42,7 @@ header{
     display: flex;
     position: relative;
     text-align: center;
+    justify-content: center;
     padding: 30px 30px 10px 30px;
     margin: 0 auto;
     background-color: gainsboro;
@@ -173,18 +174,6 @@ main{
         background-size: 190%;
         filter: saturate(200%);
     }
-    .deer_img span{
-        display: inline-block;
-        width: 1px;
-        height: 1px;
-        background-color: rgb(3, 220, 255);
-        border-radius: 50%;
-        border: none;
-        box-shadow: 0px 0px 100px 100px rgb(3, 220, 255);
-        position: absolute;
-        right: 44%;
-        bottom: 70%;
-    }
 
 
 
@@ -255,7 +244,7 @@ footer{
 }
     .sub_content p{
         margin-block-start: 0;
-        padding-right: 80px;
+        padding-right: 50px;
         line-height: 32px;
     }
     
