@@ -15,8 +15,8 @@ header{
     position: relative;
     align-items: center;
     text-align: center;
-    width: 94%;
-    padding: 3%;
+    width: 96%;
+    padding: 2%;
     margin: 0 auto;
     background-color: gainsboro;
     border-bottom: 1px solid darkslateblue;
@@ -38,6 +38,9 @@ header{
         align-items: center;
         font-size: 1.5rem;
         font-weight: 600;
+    }
+    #title img{
+        width: 10%;
     }
 #mobile_menu{
     border: 1px solid darkslateblue;
@@ -87,7 +90,10 @@ main{
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        margin: 7% auto;
+        margin: 5% auto;
+    }
+    main section h2{
+        font-size: 1.3rem;
     }
     main section p{
         padding: 3%;
@@ -215,7 +221,7 @@ footer div{
     margin: 3%;}
 footer img{
     margin-top:3%;
-    width: 10vw;
+    width: 10%;
 }
 .logo{
     text-align: center;
@@ -291,7 +297,7 @@ footer p{
 
     .gallery_section button{
         height: 100%;
-        width: 10%;
+        width: 30%;
         background: transparent;
         border: none;
         font-size: 1.3rem;
@@ -426,6 +432,11 @@ footer p{
 @media all and (min-width: 768px) and (max-width:1023px){
     html, body, button, h1, h2, h3, h4, h5, h6, input, ul, ol, li, p {
         font-size: 1.2rem;}
+    #title a{
+        font-size: 1.7rem;
+    }
+    .gallery_section button{
+        width: 20%;}
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
