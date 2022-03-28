@@ -249,7 +249,6 @@ footer p{
     padding: 2%;
 }
 #gallery{
-    width: 100%;
     text-align: center;
 }
     #gallery h3{
@@ -268,39 +267,41 @@ footer p{
         max-height: 93vw;
         filter: saturate(150%);
     }
-    .gallery_section{
-        flex-direction: row;
+    .gallery_bar{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
         width: 100%;
         height: 30vw;
+        margin: 2% auto;
         border: 1px solid darkslateblue;
         border-radius: 10px;
         background-color: rgb(36, 36, 36);
         filter: saturate(80%);
-        margin: 2% auto;
     }
-    .gallery_section ul{
+    .gallery_bar ul{
         display: flex;
         align-items: center;
         overflow: hidden;
         width: fit-content;
         height: 100%;
     }
-    .gallery_section li{
+    .gallery_bar li{
         transform: translateX(0px);
         transition: 0.5s;
         list-style-type: none;
     }
-    .gallery_section ul img{
+    .gallery_bar ul img{
         border: 1px solid rgba(24, 24, 24, 0.8);
         max-height: 30vw;
         transition: 0.5s;
     }
-        .gallery_section ul img:hover{
+        .gallery_bar ul img:hover{
             border: 1px solid ghostwhite;
             filter: brightness(120%);
         }
 
-    .gallery_section button{
+    .gallery_bar button{
         height: 100%;
         width: 30%;
         background: transparent;
@@ -311,7 +312,7 @@ footer p{
         transition: 0.5s;
         color: rgb(105, 105, 105)
     }
-        .gallery_section button:hover{
+        .gallery_bar button:hover{
             color: ghostwhite;
         }
 
