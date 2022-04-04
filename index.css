@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;500&display=swap');
 *{
     font-family: 'Hahmlet', serif;
+    font-weight: 200;
 }
 html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-}
-body{
     background-color: ghostwhite;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
 }
 #wrap{
     overflow: hidden;
@@ -51,6 +53,7 @@ header{
     header a{
         text-decoration: none;
         color: black;
+        font-weight: 500;
 }
     header a:hover{
         color: darkslateblue;
@@ -62,7 +65,7 @@ header{
     font-size: 35px;
     width: 400px;
     height: 100%;
-    font-weight: 600;
+    font-weight: 500;
 }
     #title img{
         display: inline-block;
@@ -80,7 +83,7 @@ header{
 }
     .menu_title{
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
     }
 nav ul{
     margin:0;
@@ -209,6 +212,9 @@ footer{
     background-color: gainsboro;
     border-top: 1px solid darkslateblue;
 }
+footer span{
+    font-weight: 500;
+}
     .footer_inner{
         width: 1130px;
         margin: 0 auto;
@@ -220,10 +226,13 @@ footer{
         display: flex;
         align-items: flex-start;
     }
-        .logo img{
-            margin: 15px;
-            display: block;
-        }
+    .logo{
+        padding: 1%;
+    }
+    .logo img{
+        margin: 15px;
+        display: block;
+    }
     .about{
         margin: 20px;
         line-height: 28px;
@@ -301,7 +310,7 @@ footer{
         background: transparent;
         border: none;
         font-size: 50px;
-        font-weight: bold;
+        font-weight: 500;
         cursor: pointer;
         transition: 0.5s;
         color: rgb(105, 105, 105)

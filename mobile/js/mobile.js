@@ -1,7 +1,7 @@
 $(function (){
     var btn_galleryL = $("#btn_galleryL");
     var btn_galleryR = $("#btn_galleryR");
-    var galleryList = $('.gallery_section').children('ul').children('li');
+    var galleryList = $('.gallery_bar').children('ul').children('li');
     var galleryListIndex = galleryList.length;
     var galleryWidth = galleryListIndex*300;    //list개수*(max-height)
     var galleryImg = galleryList.children('img');

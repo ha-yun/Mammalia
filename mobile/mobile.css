@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;500&display=swap');
 *{
     font-family: 'Hahmlet', serif;
+    font-weight: 200;
 }
-html,body, button, h1, h2, h3, h4, h5, h6, input, ul, ol, li, p{
+html,body, button, h1, h2, h3, h4, h5, h6, input, ul, ol, li, p, span, div, section{
     font-size: 1rem;
     margin: 0;
     padding: 0;
 }
-
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+}
 /* header */
 header{
     display: flex;
@@ -38,7 +41,7 @@ header{
         display: flex;
         align-items: center;
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: 500;
     }
     #title img{
         width: 10%;
@@ -46,7 +49,7 @@ header{
 #mobile_menu{
     border: 1px solid darkslateblue;
     background-color: ghostwhite;
-    font-weight: 800;
+    font-weight: 500;
     color: black;
     padding: 1.5%;
     border-radius: 50%;
@@ -68,7 +71,7 @@ nav{
     .menu a{
         border-bottom: 1px solid darkslateblue;
         font-size: 1.3rem;
-        font-weight: 600;
+        font-weight: 500;
     }
         .sub_menu{
             margin-top: 10%;
@@ -221,6 +224,9 @@ footer{
     background-color: gainsboro;
     border-top: 1px solid darkslateblue;
 }
+footer span{
+    font-weight: 500;
+}
 footer div{
     width: 95vw;
     margin: 3%;}
@@ -299,6 +305,7 @@ footer p{
         .gallery_bar ul img:hover{
             border: 1px solid ghostwhite;
             filter: brightness(120%);
+            cursor: pointer;
         }
 
     .gallery_bar button{
@@ -307,7 +314,7 @@ footer p{
         background: transparent;
         border: none;
         font-size: 1.3rem;
-        font-weight: bold;
+        font-weight: 500;
         cursor: pointer;
         transition: 0.5s;
         color: rgb(105, 105, 105)
