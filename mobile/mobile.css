@@ -307,8 +307,7 @@ footer p{
         transition: 0.5s;
         list-style-type: none;
     }
-    .gallery_bar ul img{
-        border: 1px solid #172c66;
+    .gallery_bar ul img{    
         max-height: 30vw;
         transition: 0.5s;
     }
