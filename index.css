@@ -15,7 +15,7 @@ html{
     background-size: cover;
 }
 body{
-    background-color: rgba(248, 248, 255, 0.4);
+    background-color: #fef6e480;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 500;
@@ -54,16 +54,17 @@ header{
     justify-content: center;
     padding: 30px 30px 10px 30px;
     margin: 0 auto;
-    background-color: rgba(248, 248, 255, 0.8);
-    border-bottom: 1px solid black;
+    background-color: #001858;
+    color: #fef6e4;
+    border-bottom: 1px solid #172c66;
 }
     header a{
         text-decoration: none;
-        color: black;
+        color: #fef6e4;
         font-weight: 500;
 }
     header a:hover{
-        color: darkslateblue;
+        color: #f582ae;
     }
 #title{
     display: flex;
@@ -116,6 +117,7 @@ main{
     flex-direction: column;
     justify-content: center;
     margin: 50px auto;
+    padding: 20px;
 }
     main section{
         width: 1130px;
@@ -127,7 +129,8 @@ main{
             padding: 9px;
             width: 610px;
             height: 480px;
-            border: 1px solid black;
+            border: 1px solid #172c66;
+            background-color: #f3d2c1;
         }
             .text p{
                 padding: 0 50px;
@@ -137,7 +140,7 @@ main{
     display: inline-block;
     width: 500px;
     height: 500px;
-    border: 1px solid black;
+    border: 1px solid #172c66;
     transition: 1s;
 }
 .cat_img{
@@ -216,8 +219,9 @@ main{
 
 /* footer */
 footer{
-    background-color: rgba(248, 248, 255, 0.8);
-    border-top: 1px solid black;
+    background-color: #001858;
+    color: #fef6e4;
+    border-top: 1px solid #172c66;
 }
 footer span{
     font-weight: 500;
@@ -270,7 +274,7 @@ footer span{
     width: 1130px;
     text-align: center;
     margin: 30px auto;
-    border-top: 1px solid black;
+    border-top: 1px solid #172c66;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,11 +286,11 @@ footer span{
     }
 .gallery_section{
     height: 300px;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #172c66;
+    border-radius: 30px;
+    background-color: #f3d2c1;
     filter: saturate(80%);
 }
     .gallery_section ul{
@@ -302,7 +306,6 @@ footer span{
         transform: translateX(0px);
         list-style-type: none;
         transition: 0.5s;
-        border: 1px solid rgba(24, 24, 24, 0.8);
         filter: brightness(90%);
     }
         .gallery_section li:hover{
@@ -310,6 +313,7 @@ footer span{
         }
     .gallery_section ul img{
         max-height: 250px;
+        border: 1px solid #172c66;
     }
     .gallery_section button{
         width: 50px;
@@ -320,7 +324,7 @@ footer span{
         font-weight: 500;
         cursor: pointer;
         transition: 0.3s;
-        color: rgba(255, 255, 255, 0.6)
+        color: #f582ae;
     }
         .gallery_section button:hover{
             color: ghostwhite;

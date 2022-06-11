@@ -7,6 +7,7 @@ html,body, button, h1, h2, h3, h4, h5, h6, input, ul, ol, li, p, span, div, sect
     font-size: 1rem;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 500;
@@ -16,7 +17,7 @@ html{
     background-size: cover;
 }
 body{
-    background-color: rgba(248, 248, 255, 0.5);
+    background-color: #fef6e480;
 }
 /* header */
 header{
@@ -29,14 +30,15 @@ header{
     width: 96%;
     padding: 2%;
     margin: 0 auto;
-    background-color: rgba(248, 248, 255, 0.8);
-    border-bottom: 1px solid black;
+    background-color: #001858;
+    color: #fef6e4;
+    border-bottom: 1px solid #172c66;
 }
     header a{
         text-decoration: none;
-        color: black;}
+        color: #fef6e4;}
     header a:hover{
-        color: darkslateblue;
+        color: #f582ae;
     }
 #title{
     display: flex;
@@ -123,7 +125,7 @@ main{
 .section_img{
     width: 40%;
     height: 40vw;
-    border: 1px solid black;
+    border: 1px solid #172c66;
     transition: 1s;
 }
 .cat_img{
@@ -228,8 +230,9 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(248, 248, 255, 0.8);
-    border-top: 1px solid black;
+    background-color: #001858;
+    color: #fef6e4;
+    border-top: 1px solid #172c66;
 }
 footer span{
     font-weight: 500;
@@ -287,9 +290,9 @@ footer p{
         width: 100%;
         height: 30vw;
         margin: 2% auto;
-        border: 1px solid black;
+        border: 1px solid #172c66;
         border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #f3d2c1;
         filter: saturate(80%);
     }
     .gallery_bar ul{
@@ -305,7 +308,7 @@ footer p{
         list-style-type: none;
     }
     .gallery_bar ul img{
-        border: 1px solid rgba(24, 24, 24, 0.8);
+        border: 1px solid #172c66;
         max-height: 30vw;
         transition: 0.5s;
     }
@@ -323,7 +326,7 @@ footer p{
         font-weight: 500;
         cursor: pointer;
         transition: 0.3s;
-        color: rgba(255, 255, 255, 0.6)
+        color: #f582ae;
     }
         .gallery_bar button:hover{
             color: ghostwhite;
