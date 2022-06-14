@@ -283,14 +283,12 @@ footer span{
     #gallery_main{
         max-height: 500px;
         filter: saturate(150%);
+        border-radius: 50px;
     }
 .gallery_section{
     height: 300px;
     width: 90%;
     justify-content: space-between;
-    border: 1px solid #172c66;
-    border-radius: 30px;
-    background-color: #f3d2c1;
     filter: saturate(80%);
 }
     .gallery_section ul{
@@ -319,14 +317,14 @@ footer span{
         margin: auto 20px;
         background: transparent;
         border: none;
-        font-size: 50px;
-        font-weight: 500;
+        font-size: 60px;
+        font-weight: 900;
         cursor: pointer;
         transition: 0.3s;
-        color: #f582ae;
+        color: #172c66;
     }
         .gallery_section button:hover{
-            color: ghostwhite;
+            color: black;
         }
 
 /* cat */

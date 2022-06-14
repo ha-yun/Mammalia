@@ -282,6 +282,7 @@ footer p{
         max-width: 93vw;
         max-height: 93vw;
         filter: saturate(150%);
+        border-radius: 50px;
     }
     .gallery_bar{
         display: flex;
@@ -289,10 +290,7 @@ footer p{
         overflow: hidden;
         width: 100%;
         height: 30vw;
-        margin: 2% auto;
-        border: 1px solid #172c66;
-        border-radius: 10px;
-        background-color: #f3d2c1;
+        margin: 5% auto;
         filter: saturate(80%);
     }
     .gallery_bar ul{
@@ -321,14 +319,14 @@ footer p{
         width: 30%;
         background: transparent;
         border: none;
-        font-size: 1.3rem;
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 900;
         cursor: pointer;
         transition: 0.3s;
-        color: #f582ae;
+        color: #172c66;
     }
         .gallery_bar button:hover{
-            color: ghostwhite;
+            color: black;
         }
 
 /* cat */
