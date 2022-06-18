@@ -15,7 +15,7 @@ html{
     background-size: cover;
 }
 body{
-    background-color: #fef6e480;
+    background-color: #ffffff80;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 500;
@@ -54,17 +54,17 @@ header{
     justify-content: center;
     padding: 30px 30px 10px 30px;
     margin: 0 auto;
-    background-color: #001858;
-    color: #fef6e4;
-    border-bottom: 1px solid #172c66;
+    background-color: #f5c03c;
+    color: black;
+    border-bottom: 2px solid #914313;
 }
     header a{
         text-decoration: none;
-        color: #fef6e4;
+        color:  #914313;
         font-weight: 500;
 }
     header a:hover{
-        color: #f582ae;
+        color: #f08719;
     }
 #title{
     display: flex;
@@ -129,8 +129,7 @@ main{
             padding: 9px;
             width: 610px;
             height: 480px;
-            border: 1px solid #172c66;
-            background-color: #f3d2c1;
+            border-bottom: 1px solid #914313;
         }
             .text p{
                 padding: 0 50px;
@@ -140,7 +139,7 @@ main{
     display: inline-block;
     width: 500px;
     height: 500px;
-    border: 1px solid #172c66;
+    border: none;
     transition: 1s;
 }
 .cat_img{
@@ -219,9 +218,9 @@ main{
 
 /* footer */
 footer{
-    background-color: #001858;
-    color: #fef6e4;
-    border-top: 1px solid #172c66;
+    background-color: #f5c03c;
+    color: #914313;
+    border-top: 2px solid #914313;
 }
 footer span{
     font-weight: 500;
@@ -274,7 +273,8 @@ footer span{
     width: 1130px;
     text-align: center;
     margin: 30px auto;
-    border-top: 1px solid #172c66;
+    border-top: 1px solid #914313;
+    color: #914313;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,10 +321,10 @@ footer span{
         font-weight: 900;
         cursor: pointer;
         transition: 0.3s;
-        color: #172c66;
+        color: #914313;
     }
         .gallery_section button:hover{
-            color: black;
+            color: #f08719;
         }
 
 /* cat */
