@@ -129,7 +129,7 @@ main{
             padding: 9px;
             width: 610px;
             height: 480px;
-            border-bottom: 1px solid #914313;
+            border-bottom: 1px solid black;
         }
             .text p{
                 padding: 0 50px;
@@ -145,6 +145,7 @@ main{
 .cat_img{
     background: url(content/cat_main.jpg) center;
     background-size: 100%;
+    border: 1px solid black;
 }
     .cat_img:active, .cat_img:focus, .cat_img:hover{
         background-size: 105%;
@@ -155,6 +156,7 @@ main{
 .dog_img{
     background: url(content/dog_main.jpg) center;
     background-size: 100%;
+    border: 1px solid black;
 }
     .dog_img:active, .dog_img:focus, .dog_img:hover{
         background-size: 110%;
@@ -169,6 +171,7 @@ main{
     background: url(content/rabbit_main.jpg) center;
     background-size: 160%;
     filter: grayscale(10%);
+    border: 1px solid black;
 }
     .rabbit_img:active, .rabbit_img:focus, .rabbit_img:hover{
         filter: brightness(130%);
@@ -180,6 +183,7 @@ main{
     background-size: 180%;
     position: relative;
     opacity: 0.9;
+    border: 1px solid black;
 }
     .deer_img:active, .deer_img:focus, .deer_img:hover{
         opacity: 1;
@@ -260,6 +264,7 @@ footer span{
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 50px;
 }
     .sub_content p{
         margin: 0;
@@ -274,7 +279,7 @@ footer span{
     text-align: center;
     margin: 30px auto;
     border-top: 1px solid #914313;
-    color: #914313;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
