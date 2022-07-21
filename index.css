@@ -11,11 +11,11 @@ html,body{
     width: 100%;
 }
 html{
-    background: url(content/field.jpg);
+    background: url(content/nordwood.jpg);
     background-size: cover;
 }
 body{
-    background-color: #ffffff80;
+    background-color: #d8d8d8cb;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 500;
@@ -54,17 +54,17 @@ header{
     justify-content: center;
     padding: 30px 30px 10px 30px;
     margin: 0 auto;
-    background-color: #f5c03c;
-    color: black;
-    border-bottom: 2px solid #914313;
+    color: #424242;
+    background-color: #2525251a;
+    border-bottom: 2px solid #2525251a;
 }
     header a{
         text-decoration: none;
-        color:  #914313;
+        color:  #424242;
         font-weight: 500;
 }
     header a:hover{
-        color: #f08719;
+        color: #2525256b;
     }
 #title{
     display: flex;
@@ -129,7 +129,7 @@ main{
             padding: 9px;
             width: 610px;
             height: 480px;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #424242;
         }
             .text p{
                 padding: 0 50px;
@@ -145,22 +145,26 @@ main{
 .cat_img{
     background: url(content/cat_main.jpg) center;
     background-size: 100%;
-    border: 1px solid black;
+    border: 1px solid #252525;
+    box-shadow: 3px 15px 14px 2px #252525;
 }
     .cat_img:active, .cat_img:focus, .cat_img:hover{
         background-size: 105%;
-        filter: saturate(500%);
+        filter: saturate(500%)#252525;
+        box-shadow: 0px 15px 10px 0px #252525;
     }
 
 
 .dog_img{
     background: url(content/dog_main.jpg) center;
     background-size: 100%;
-    border: 1px solid black;
+    border: 1px solid #252525;
+    box-shadow: -3px 15px 14px 2px #252525;
 }
     .dog_img:active, .dog_img:focus, .dog_img:hover{
         background-size: 110%;
-        animation: color 10s infinite;
+        animation: color 10s infinite#252525;
+        box-shadow: 0px 15px 10px 0px #252525;
     }
     @keyframes color{
         100%{
@@ -171,11 +175,13 @@ main{
     background: url(content/rabbit_main.jpg) center;
     background-size: 160%;
     filter: grayscale(10%);
-    border: 1px solid black;
+    border: 1px solid #252525;
+    box-shadow: 3px 15px 14px 2px #252525;
 }
     .rabbit_img:active, .rabbit_img:focus, .rabbit_img:hover{
         filter: brightness(130%);
         background-size: 170%;
+        box-shadow: 0px 15px 10px 0px #252525;
     }
 .deer_img{
     background: url(content/deer_main.jpg);
@@ -183,12 +189,14 @@ main{
     background-size: 180%;
     position: relative;
     opacity: 0.9;
-    border: 1px solid black;
+    border: 1px solid #252525;
+    box-shadow: -3px 15px 14px 2px #252525;
 }
     .deer_img:active, .deer_img:focus, .deer_img:hover{
         opacity: 1;
         background-size: 190%;
         filter: saturate(200%);
+        box-shadow: 0px 15px 10px 0px #252525;
     }
 
 
@@ -222,9 +230,9 @@ main{
 
 /* footer */
 footer{
-    background-color: #f5c03c;
-    color: #914313;
-    border-top: 2px solid #914313;
+    background-color: #2525251a;
+    color: #424242;
+    border-top: 2px solid #2525251a;
 }
 footer span{
     font-weight: 500;
@@ -278,8 +286,8 @@ footer span{
     width: 1130px;
     text-align: center;
     margin: 30px auto;
-    border-top: 1px solid #914313;
-    color: black;
+    color: #424242;
+    border-top: 1px solid #2525256b;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -326,10 +334,10 @@ footer span{
         font-weight: 900;
         cursor: pointer;
         transition: 0.3s;
-        color: #914313;
+        color: #252525a1;
     }
         .gallery_section button:hover{
-            color: #f08719;
+            color: #2525256b;
         }
 
 /* cat */
