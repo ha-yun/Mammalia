@@ -8,7 +8,31 @@ $(function (){
     var Left;
     var Right;
     EventList();
-
+    
+    setInterval(function(){
+        $(".cat_wrap .cat_img").eq(1).animate({'margin-left':'-100%'},function(){
+            $(".cat_wrap .cat_img").eq(1).prependTo('.cat_wrap')
+            $(".cat_wrap .cat_img").eq(0).css({'margin-left':'0%'})
+        })
+    },4000)
+    setInterval(function(){
+        $(".dog_wrap .dog_img").eq(1).animate({'margin-left':'100%'},function(){
+            $(".dog_wrap .dog_img").eq(1).prependTo('.dog_wrap')
+            $(".dog_wrap .dog_img").eq(0).css({'margin-left':'0%'})
+        })
+    },5000)
+    setInterval(function(){
+        $(".rabbit_wrap .rabbit_img").eq(1).animate({'margin-left':'-100%'},function(){
+            $(".rabbit_wrap .rabbit_img").eq(1).prependTo('.rabbit_wrap')
+            $(".rabbit_wrap .rabbit_img").eq(0).css({'margin-left':'0%'})
+        })
+    },4500)
+    setInterval(function(){
+        $(".deer_wrap .deer_img").eq(1).animate({'margin-left':'100%'},function(){
+            $(".deer_wrap .deer_img").eq(1).prependTo('.deer_wrap')
+            $(".deer_wrap .deer_img").eq(0).css({'margin-left':'0%'})
+        })
+    },5500)
 
     function MoveGalleryR(){
         Right = Number(galleryList.css('transform').split(',')[4]);

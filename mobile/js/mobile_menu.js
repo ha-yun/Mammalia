@@ -5,7 +5,7 @@ $(function(){
     EventMenu();
 
     function MenuToggle(){
-        menuNav.stop().slideToggle(1000)
+        menuNav.stop().slideToggle(600);
     }
     function EventMenu(){
         menuBtn.on('click', MenuToggle);

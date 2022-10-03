@@ -27,8 +27,7 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 96%;
-    padding: 2%;
+    width: 100%;
     margin: 0 auto;
     background-color: #2525251a;
     color: #424242;
@@ -44,6 +43,7 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding: 4%
 }
     #title a{
         display: flex;
@@ -55,26 +55,33 @@ header{
         width: 10%;
     }
 #mobile_menu{
-    border: 2px solid #2525259f;
+    border: none;
     background-color: transparent;
     font-weight: 500;
     color: #424242;
     padding: 1% 1.5%;
     border-radius: 25px;
     cursor: pointer;
+    box-shadow: 0 0 3px 0 #42424280;
 }
 nav{
     width: 100%;
-    padding-top: 5%;
     display: none;
+    position: relative;
 }
     nav ul{
         list-style: none;
     }
 .menu{
     display: grid;
+    position: absolute;
     justify-items: center;
     align-items: center;
+    background: #cacacaf2;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 0 10px 0px #42424221;
 }
     .menu a{
         border-bottom: 1px solid #2525259f;
@@ -120,32 +127,39 @@ main{
 }
 .main_img img{
     width: 35%;
+    transition: 0.3s all ease;
 }
 .section_img{
     width: 40%;
     height: 40vw;
     border: 1px solid #252525;
     transition: 1s;
-}
-.cat_img{
-    background: url(../content/cat_main.jpg) center;
-    background-size: 120%;
     box-shadow: 3px 10px 14px 2px #252525;
+    position: relative;
+    overflow: hidden;
 }
-    .cat_img:active, .cat_img:focus, .cat_img:hover{
-        background-size: 150%;
-        filter: saturate(500%);
+    .section_img:active, .section_img:focus, .section_img:hover{
         box-shadow: 0px 7px 10px 0px #252525;
     }
+.cat_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+}
+    .cat_img:active, .cat_img:focus, .cat_img:hover{
+        transform: scale(1.05);
+        filter: saturate(500%);
+    }
 .dog_img{
-    background: url(../content/dog_main.jpg) center;
-    background-size: 100%;
-    box-shadow: -3px 10px 14px 2px #252525;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
 }
     .dog_img:active, .dog_img:focus, .dog_img:hover{
-        background-size: 110%;
+        transform: scale(1.05);
         animation: color 10s infinite;
-        box-shadow: 0px 7px 10px 0px #252525;
     }
     @keyframes color{
         100%{
@@ -153,28 +167,27 @@ main{
         }
     }
 .rabbit_img{
-    background: url(../content/rabbit_main.jpg) center;
-    background-size: 175%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
     filter: grayscale(10%);
-    box-shadow: 3px 10px 14px 2px #252525;
 }
     .rabbit_img:active, .rabbit_img:focus, .rabbit_img:hover{
+        transform: scale(1.05);
         filter: brightness(130%);
-        background-size: 200%;
-        box-shadow: 0px 7px 10px 0px #252525;
     }
 .deer_img{
-    background: url(../content/deer_main.jpg);
-    background-position: 90%;
-    background-size: 180%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
     opacity: 0.9;
-    box-shadow: -3px 10px 14px 2px #252525;
 }
     .deer_img:active, .deer_img:focus, .deer_img:hover{
         opacity: 1;
-        background-size: 200%;
+        transform: scale(1.05);
         filter: saturate(200%);
-        box-shadow: 0px 7px 10px 0px #252525;
     }
 
 /* last_animation */
