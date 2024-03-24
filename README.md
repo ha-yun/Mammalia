@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=venom&color=timeGradient&height=200&section=header&text=Mammalia&fontSize=90)
+![header](https://capsule-render.vercel.app/api?type=venom&color=timeGradient&height=200&section=header&text=Mammalia&fontSize=90&fontColor=222)
 
 ## 소개
 * 1인 프로젝트
